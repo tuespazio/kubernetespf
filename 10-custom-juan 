@@ -1,0 +1,20 @@
+# --- Banner de Bienvenida (Arte ASCII) ---
+HOSTNAME=$(hostname)
+printf "\n"
+printf "${CYAN}"
+printf "   ██████╗██╗░░░██╗░█████╗░███╗░░██╗\n"
+printf "   ░░░░░██║██║░░░██║██╔══██╗████╗░██║\n"
+printf "   ░░░░░██║██║░░░██║███████║██╔██╗██║\n"
+printf "██╗░░░░██║██║░░░██║██╔══██║██║╚████║\n"
+printf "╚██████╔╝╚██████╔╝██║░░██║██║░╚███║\n"
+printf " ╚═════╝ ░╚═════╝░╚═╝░░╚═╝╚═╝░░╚══╝\n"
+printf "${NC}"
+printf "\n"
+printf "Bienvenido al master de tu Kubernetes. La fecha actual es ${BLUE}$(date)${NC}.\n"
+printf "Comandos importantes
+kubectl get nodes
+kubectl get pods
+kubectl get -n kube-system
+kubectl get svc"
+printf "\n"
+kubectl get nodes
